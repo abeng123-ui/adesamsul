@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="navbar-wrapper">
-    <a class="navbar-brand" href="javascript:;">Table List</a>
+    <a class="navbar-brand" href="javascript:;">Sistem Pengelolaan Data Kelurahan Pademangan Barat</a>
   </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
     <span class="sr-only">Toggle navigation</span>
@@ -46,10 +46,10 @@
           </p>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-          <a class="dropdown-item" href="#">Profile</a>
+          <!-- <a class="dropdown-item" href="#">Profile</a>
           <a class="dropdown-item" href="#">Settings</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Log out</a>
+          <div class="dropdown-divider"></div> -->
+          <a class="dropdown-item" href="{{ route('logout') }}">Log out</a>
         </div>
       </li>
     </ul>
