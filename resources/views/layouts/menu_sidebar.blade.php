@@ -9,6 +9,7 @@
   }
 
 </style>
+
 <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
     Kependudukan
   </a></div>
@@ -20,6 +21,7 @@
         <p>Beranda</p>
       </a>
     </li>
+
     <?php
     $acl = \App\Models\Role::where(function ($query) {
         $query->where('id', \Auth::user()->role_id)

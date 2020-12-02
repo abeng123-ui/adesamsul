@@ -24,7 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-
         $jumlah_penduduk = \App\Models\Penduduk::whereNull('deleted_at')->get()->count();
         $jumlah_kk = \App\Models\Kk::select('no_kk')->groupBy('no_kk')->get()->count();
 
