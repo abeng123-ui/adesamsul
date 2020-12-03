@@ -41,7 +41,7 @@
       </a>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="{{ url('/agama') }}">Agama</a></li>
-        <li><a class="dropdown-item" href="{{ url('/kategori') }}">Kategori</a></li>
+
       </ul>
     </li>
     @endif

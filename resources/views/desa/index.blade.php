@@ -66,6 +66,14 @@ function hapus()
               </tr>
 
               <tr>
+                  <td> Kepala Camat </td>  <td>{{ $data->nama_camat }}</td>
+              </tr>
+
+              <tr>
+                  <td> NIK Camat </td>  <td>{{ $data->nik_camat }}</td>
+              </tr>
+
+              <tr>
                   <td align="right" colspan="5">
                     <a class="btn btn-primary" href="{{ url('desa/edit') }}/{{ $data->id }}">Ubah</a>
                       <a onclick="return hapus()" href="{{url('desa/delete')}}/{{$data->id}}" type="submit" class="btn btn-danger">Hapus</a>

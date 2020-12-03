@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+set_time_limit (120);
 
 Route::get('/', function () {
     return redirect('login');
@@ -27,14 +28,6 @@ Route::get('agama/delete/{id}', 'AgamaController@agama_delete');
 Route::post('agama/update/{id}', 'AgamaController@agama_update');
 Route::get('agama/check_agama', 'AgamaController@checkagama');
 
-Route::get('kategori', 'KategoriController@index')->name('kategori.index');
-Route::get('kategori/create', 'KategoriController@kategori_create');
-Route::post('kategori/store', 'KategoriController@kategori_store');
-Route::get('kategori/edit/{id}', 'KategoriController@kategori_edit');
-Route::get('kategori/delete/{id}', 'KategoriController@kategori_delete');
-Route::post('kategori/update/{id}', 'KategoriController@kategori_update');
-Route::get('kategori/check_kategori', 'KategoriController@checkkategori');
-
 Route::get('kk', 'KkController@index')->name('kk.index');
 Route::get('kk/create', 'KkController@kk_create');
 Route::post('kk/store', 'KkController@kk_store');
@@ -49,8 +42,9 @@ Route::get('penduduk/edit/{id}', 'PendudukController@penduduk_edit');
 Route::get('penduduk/delete/{id}', 'PendudukController@penduduk_delete');
 Route::post('penduduk/update/{id}', 'PendudukController@penduduk_update');
 
-Route::get('angkel/{id}', 'AngkelController@index');
-Route::get('individu/{id}', 'AngkelController@individu');
+Route::get('angkel/{no_kk}', 'AngkelController@index');
+Route::get('individu/{nik}', 'AngkelController@individu');
+Route::get('angkel/download/{no_kk}', 'AngkelController@download_kk');
 
 Route::get('desa', 'DesaController@index')->name('desa.index');
 Route::get('desa/create', 'DesaController@desa_create');

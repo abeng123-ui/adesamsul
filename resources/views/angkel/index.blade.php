@@ -35,6 +35,7 @@ function hapus()
         <div class="card-header card-header-primary">
           <h4 class="card-title ">Detail Individu di KK {{ $no_kk }}</h4>
           <p class="card-category"></p>
+          <a target="_blank" class="btn btn-info" href="{{ url('angkel/download/') }}/{{ $no_kk }}">Unduh KK</a>
           <br>
             @if(session()->has('message.level'))
                 <div class="alert alert-{{ session('message.level') }}">

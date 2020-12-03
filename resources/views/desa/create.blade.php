@@ -57,6 +57,24 @@
               </div>
             </div>
 
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Nama Kepala Camat</label>
+                  <input name="nama_camat" maxlength="45" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">NIK Kepala Camat</label>
+                  <input name="nik_camat" maxlength="45" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
             <!-- <button type="submit" class="btn btn-primary pull-right">Update Profile</button> -->
             <a href="{{url('desa')}}" class="btn btn-info pull-right">Back</a>
             <button type="submit" class="btn btn-primary pull-right">Save</button>
@@ -87,6 +105,12 @@ $(document).ready(function() {
           required: true,
         },
         kepala_desa: {
+          required: true,
+        },
+        nama_camat: {
+          required: true,
+        },
+        nik_camat: {
           required: true,
         },
      },

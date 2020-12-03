@@ -51,6 +51,8 @@ class DesaController extends Controller
         $data->kabupaten = $request->kabupaten;
         $data->provinsi = $request->provinsi;
         $data->kepala_desa = $request->kepala_desa;
+        $data->nama_camat = $request->nama_camat;
+        $data->nik_camat = $request->nik_camat;
         $data->save();
 
         // Flash Message / Alert
@@ -75,6 +77,8 @@ class DesaController extends Controller
         $ubah->kabupaten = $request->kabupaten;
         $ubah->provinsi = $request->provinsi;
         $ubah->kepala_desa = $request->kepala_desa;
+        $ubah->nama_camat = $request->nama_camat;
+        $ubah->nik_camat = $request->nik_camat;
         $ubah->update();
 
         // Flash Message / Alert
